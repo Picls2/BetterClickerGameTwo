@@ -1,0 +1,356 @@
+#body-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+}
+
+#titleContainer{
+    text-align: center;
+    flex-grow: 2;
+}
+
+#gameTitle{
+    font-size: xx-large;
+    padding: 10px;
+    position: relative;
+}
+
+#helpButton{
+    width: 60px;
+    height: max-content;
+    padding: 10px 0px 0px 0px;
+}
+
+#marketContainer{
+    display: flex;
+    flex-grow: 3;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#moneyMakingContainer{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #3d3d3d;
+}
+
+#bananaMakerContainer{
+    display: flex;
+    margin: 10px;
+}
+
+#orangeMakerContainer{
+    display: flex;
+    margin: 10px;
+}
+
+#peachMakerContainer{
+    display: flex;
+    margin: 10px;
+}
+
+#marketSeparatorOne{
+    margin: 8px 15px 0px 15px;
+}
+
+#marketSeparatorTwo{
+    margin: 8px 15px 0px 15px;
+}
+
+#bananaMoneyMaker{
+    background-color: #e3e049;
+    font-family: papyrus, fantasy;
+}
+
+#orangeMoneyMaker{
+    background-color: #ffb200;
+    font-family: papyrus, fantasy;
+}
+
+#peachMoneyMaker{
+    background-color: #ffe4a6;
+    font-family: papyrus, fantasy;
+}
+
+#itemUnlock{
+	font-size: 400%;
+	text-align: center;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+    z-index: -1;
+}
+
+#gameTimer{
+    padding: 10px 0px 1% 0px;
+    text-align: center;
+    font-size: 175%
+}
+
+#helpScreenShade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
+    padding: 100% 0px 0px 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#helpScreen{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 20px;
+    width: 70%;
+    position: relative;
+    bottom: 200px;
+}
+
+#helpTitle{
+    text-align: center;
+    position: relative;
+    left: 1%;
+}
+
+#closeHelpScreen{
+    width: 50px;
+    height: max-content;
+    padding: 2% 5% 0px 0px;
+}
+
+#gambleScreenShade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
+    padding: 100% 0px 0px 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#gambleScreen{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    padding: 20px;
+    width: 70%;
+    height: max-content;
+    position: relative;
+    bottom: 300px;
+    font-size: 200%;
+    justify-content: center;
+}
+
+#closeGambleScreen{
+    width: 50px;
+    height: max-content;
+    position: relative;
+    left: 30%;
+}
+
+#helpHeader{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 20%
+}
+
+#bananaMoneyMaker:hover{
+    background-color: #d4d159;
+    cursor: pointer;
+}
+
+#orangeMoneyMaker:hover{
+    background-color: #e6a000;
+    cursor: pointer;
+}
+
+#peachMoneyMaker:hover{
+    background-color: #e8d19b;
+    cursor: pointer;
+}
+
+#helpButton:hover{
+    cursor: pointer;
+}
+
+#closeHelpScreen:hover{
+    cursor: pointer;
+}
+
+#closeGambleScreen:hover{
+    cursor: pointer;
+}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+body{
+    background-color: #262626;
+    overflow: hidden;
+}
+
+@media (min-width: 50px) and (max-width: 400px){
+    body{
+        overflow: visible;
+    }
+    
+}
+
+
+.game-text{
+        font-family: papyrus, fantasy;
+            color: gold;
+}
+
+.separator{
+    background-color: darkgrey;
+    padding: 2px;
+    border-radius: 1px;
+}
+
+.game-button{
+    flex-grow: 4;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 30%;
+    border-radius: px;
+}
+
+.upgrader-thumbnail{
+   width: 50px;
+   height: 50px;
+   padding: 5px;
+   border-width: 2px;
+   border-color: #3d3d3d;
+   border-radius: 2px;
+}
+
+.money-upgrader{
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.0);
+    border-radius: 100px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: button-gradient 15s ease infinite;
+    font-family: papyrus, fantasy;
+     
+}
+
+.money-maker-clicker{
+    position: relative;
+    top: 5px;
+    height: 25px;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+.header-container{
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+}
+
+.game-info-container{
+    display: flex;
+    flex-grow: 3;
+    padding: 5px;
+    font-size: larger;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+.longer-parts{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    flex-grow: 4;
+}
+
+.cover{
+    background-color: rgba(0, 0, 0, 0.0);
+    z-index: -1;
+}
+
+.money-upgrader:hover{
+    border-color: #43a0ba;
+    cursor: pointer;
+}
+
+@keyframes button-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#shopContainer{
+    display: flex;
+    flex-direction: column;  
+    flex-grow: 0.5;
+    padding: 10px;
+    background-color: #402e2e;
+    align-content: space-around;
+    z-index: -1;
+}
+
+.shop-button{
+    margin: 5px 0px 10px 20px ;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.0);
+    border-radius: 3px;
+    width: 80%;
+    height: 50%;
+    background-color: #00627d;
+    text-align: center;
+    font-family: papyrus, fantasy;
+}
+
+#shopContainer{
+    display: flex;
+    flex-direction: column;
+    border-color: darkgray;
+    border-width: 3px;
+    border-radius: 1px;
+    text-align: center;
+    margin: 10px;
+}
+
+#shopTitle{
+    font-size: 30px;
+}
+
+.shop-button:hover{
+    border-color: #654087;
+    cursor: pointer;
+}
